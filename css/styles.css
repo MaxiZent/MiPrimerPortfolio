@@ -10,6 +10,56 @@ html {
   scroll-behavior: smooth;
 }
 
+/* HEADER */
+#inicio .contenido header {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+#inicio .contenido header .contenido-header {
+  max-width: 1100px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+#inicio .contenido header .contenido-header h1 {
+  text-align: center;
+  color: red;
+}
+#inicio .contenido header .contenido-header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+#inicio .contenido header .contenido-header nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 12px;
+  font-weight: 400;
+  transition: 0.5s;
+}
+#inicio .contenido header .contenido-header nav ul li a:hover {
+  color: red;
+}
+#inicio .contenido header .contenido-header #icono-nav {
+  color: #fff;
+  display: none;
+}
+#inicio .contenido header .contenido-header .redes a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin-left: 10px;
+  transition: 0.5s;
+}
+#inicio .contenido header .contenido-header .redes a:hover {
+  color: red;
+}
+
 /*INICIO MAIN*/
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/fondo-inicio.jpg");
@@ -67,54 +117,73 @@ html {
   background-color: red;
 }
 
-/* HEADER */
-#inicio .contenido header {
-  background-color: rgba(0, 0, 0, 0.8);
-  position: fixed;
-  width: 100%;
-  z-index: 100;
-  top: 0;
-}
-#inicio .contenido header .contenido-header {
+/* SECCION SOBRE MI*/
+#sobremi {
   max-width: 1100px;
   margin: auto;
+  padding: 100px 15px;
+  color: #111135;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px 20px;
 }
-#inicio .contenido header .contenido-header h1 {
-  text-align: center;
+#sobremi .contenedor-foto {
+  max-width: 400px;
+  margin-right: 80px;
+  margin: 10px;
+}
+#sobremi .contenedor-foto img {
+  padding: 20px;
+  width: 100%;
+  border-radius: 20px;
+  background-color: #f3f3f3;
+}
+#sobremi .sobremi {
+  margin: 0 40px;
+}
+#sobremi .sobremi .titulo-seccion {
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+#sobremi .sobremi h3 {
+  font-size: 34px;
+  font-weight: bold;
+  margin: 20px 0;
+  letter-spacing: 2px;
+}
+#sobremi .sobremi h3 span {
   color: red;
 }
-#inicio .contenido header .contenido-header nav ul {
-  list-style: none;
-  display: flex;
-  align-items: center;
+#sobremi .sobremi h4 {
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  letter-spacing: 1px;
 }
-#inicio .contenido header .contenido-header nav ul li a {
-  text-decoration: none;
-  color: #fff;
-  margin: 0 12px;
-  font-weight: 400;
-  transition: 0.5s;
+#sobremi .sobremi p {
+  font-size: 14px;
+  line-height: 25px;
+  color: #565656;
+  margin-bottom: 12px;
 }
-#inicio .contenido header .contenido-header nav ul li a:hover {
-  color: red;
-}
-#inicio .contenido header .contenido-header #icono-nav {
-  color: #fff;
-  display: none;
-}
-#inicio .contenido header .contenido-header .redes a {
-  text-decoration: none;
-  color: #fff;
+#sobremi .sobremi a {
   display: inline-block;
-  margin-left: 10px;
+  text-decoration: none;
+  color: #000;
+  border-radius: 30px;
+  padding: 10px 20px;
+  border: 1px solid red;
+  margin-top: 30px;
   transition: 0.5s;
 }
-#inicio .contenido header .contenido-header .redes a:hover {
-  color: red;
+#sobremi .sobremi a:hover {
+  background-color: red;
+  color: #fff;
 }
+
+
 
 /*# sourceMappingURL=styles.css.map */
