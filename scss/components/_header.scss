@@ -1,0 +1,60 @@
+/* HEADER */
+
+#inicio .contenido {
+    header {
+        background-color: rgba(0, 0, 0, .8);
+        position: fixed;
+        width: 100%;
+        z-index: 100;
+        top: 0;
+
+        .contenido-header {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+
+            h1 {
+                text-align: center;
+                color: red;
+            }
+
+            nav ul {
+                list-style: none;
+                display: flex;
+                align-items: center;
+
+                li a {
+                    text-decoration: none;
+                    color: #fff;
+                    margin: 0 12px;
+                    font-weight: 400;
+                    transition: .5s;
+
+                    &:hover {
+                        color: red;
+                    }
+                }
+            }
+
+            #icono-nav {
+                color: #fff;
+                display: none;
+            }
+
+            .redes a {
+                text-decoration: none;
+                color: #fff;
+                display: inline-block;
+                margin-left: 10px;
+                transition: .5s;
+
+                &:hover {
+                    color: red;
+                }
+            }
+        }
+    }
+}
