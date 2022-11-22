@@ -197,7 +197,7 @@
                 margin-bottom: 25px;
             }
 
-            ul{
+            ul {
                 list-style: none;
                 display: flex;
                 justify-content: space-between;
@@ -215,7 +215,7 @@
 /*SECCION SKILLS*/
 
 .contenedor-skills {
-    background: linear-gradient( #eb5a5acc, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, 0.8)), url("/img/fondo-skills.jpg");
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -223,5 +223,142 @@
     background-position: center center;
     padding: 100px 0;
     text-align: center;
+
+    .skill {
+        max-width: 600px;
+        margin: 30px auto;
+
+        .info {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .lista {
+            display: inline-block;
+            margin-right: 20px;
+            height: 10px;
+            width: 10px;
+            background-color: #fff;
+        }
+
+        .barra {
+            background-color: #919191;
+            width: 100%;
+            height: 6px;
+            margin: 10px 0;
+        }
+
+        .barra-progreso1 {
+            background-color: #fff;
+            width: 90%;
+            height: 6px;
+            animation: progreso1 2s forwards;
+        }
+
+        .barra-progreso2 {
+            background-color: #fff;
+            width: 95%;
+            height: 6px;
+            animation: progreso2 2s forwards;
+        }
+
+        .barra-progreso3 {
+            background-color: #fff;
+            width: 85%;
+            height: 6px;
+            animation: progreso3 2s forwards;
+        }
+    }
 }
 
+/*CREAION DE "ANIMACION"*/
+@keyframes progreso1 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progreso2 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progreso3 {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+/*SECCION PORTAFOLIO*/
+
+#portfolio {
+    max-width: 1100px;
+    padding: 100px 0;
+    margin: auto;
+
+    .titulo-seccion {
+        text-align: center;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 4px;
+    }
+
+    .fila {
+        display: flex;
+        justify-content: space-between;
+        margin: 30px 0;
+
+        .proyecto {
+            max-width: 450px;
+            border: 1px solid #000;
+            margin: 0 10px;
+            position: relative;
+            overflow: hidden;
+
+            img {
+                width: 100%;
+                height: 100%;
+                filter: grayscale(1);
+                object-fit: cover;
+                transition: .5s;
+            }
+
+            &:hover img {
+                filter: grayscale(0);
+            }
+
+            .info {
+                position: absolute;
+                left: 0px;
+                background-color: rgba(0, 0, 0, 0.8);
+                color: #ff5070;
+                width: 100%;
+                padding: 10px;
+                opacity: 0;
+                bottom: -40px;
+                transition: .5s;
+            }
+
+            &:hover .info {
+                opacity: 1;
+                bottom: 0;
+            }
+        }
+    }
+}

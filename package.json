@@ -1,11 +1,23 @@
 {
   "name": "miprimerportfolio",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MaxiZent/MiPrimerPortfolio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/MaxiZent/MiPrimerPortfolio/issues"
+  },
+  "homepage": "https://github.com/MaxiZent/MiPrimerPortfolio#readme",
+  "dependencies": {
+    "sass": "^1.56.1"
+  },
+  "devDependencies": {},
+  "description": ""
 }
