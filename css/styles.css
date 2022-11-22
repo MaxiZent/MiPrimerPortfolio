@@ -10,6 +10,24 @@ html {
   scroll-behavior: smooth;
 }
 
+/*FOOTER*/
+footer {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 30px 0;
+}
+footer a {
+  text-decoration: none;
+  color: #fff;
+  display: inline-block;
+  margin: 5px;
+  font-size: 26px;
+}
+footer a:hover {
+  color: red;
+}
+
 /*INICIO MAIN*/
 #inicio {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/fondo-inicio.jpg");
@@ -55,7 +73,7 @@ html {
   text-decoration: none;
   display: inline-block;
   margin: 25px;
-  padding: 25px 25px;
+  padding: 20px 20px;
   border: 2px solid #fff;
   border-radius: 50px;
   color: #fff;
@@ -145,8 +163,8 @@ html {
   text-transform: uppercase;
   color: #111135;
   text-decoration: underline;
-  text-decoration-color: #d3d3d3;
-  text-decoration-thickness: 5px;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
 }
 #servicios .fila {
   display: flex;
@@ -285,7 +303,7 @@ html {
   color: #111135;
   text-decoration: underline;
   text-decoration-color: red;
-  text-decoration-thickness: 4px;
+  text-decoration-thickness: 3px;
 }
 #portfolio .fila {
   display: flex;
@@ -323,6 +341,58 @@ html {
 #portfolio .fila .proyecto:hover .info {
   opacity: 1;
   bottom: 0;
+}
+
+/*SECCION CONTACTO*/
+#contacto {
+  padding: 100px 15px;
+}
+#contacto .titulo-seccion {
+  text-align: center;
+  margin: 20px;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: red;
+  text-decoration-thickness: 3px;
+}
+#contacto .contenedor-form {
+  max-width: 1100px;
+  margin: auto;
+}
+#contacto .contenedor-form .fila {
+  margin-bottom: 15px;
+}
+#contacto .contenedor-form .mitad {
+  display: flex;
+  justify-content: space-between;
+}
+#contacto .contenedor-form .mitad input {
+  width: 48%;
+}
+#contacto .contenedor-form input,
+#contacto .contenedor-form textarea {
+  padding: 20px;
+  border-radius: 20px;
+  border: none;
+  border: 1px solid #919191;
+}
+#contacto .contenedor-form .input-full {
+  width: 100%;
+}
+#contacto .btn-enviar {
+  display: block;
+  margin: auto;
+  cursor: pointer;
+  transition: 0.5s;
+  padding: 10px 15px;
+  font-size: 12px;
+  font-weight: bold;
+}
+#contacto .btn-enviar:hover {
+  background-color: red;
+  color: #fff;
 }
 
 /* HEADER */
@@ -365,6 +435,7 @@ html {
   display: none;
 }
 #inicio .contenido header .contenido-header .redes a {
+  font-size: 18px;
   text-decoration: none;
   color: #fff;
   display: inline-block;

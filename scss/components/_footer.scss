@@ -1,0 +1,20 @@
+/*FOOTER*/
+
+footer {
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+
+    a {
+        text-decoration: none;
+        color: #fff;
+        display: inline-block;
+        margin: 5px;
+        font-size: 26px;
+
+        &:hover {
+            color: red;
+        }
+    }
+}

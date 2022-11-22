@@ -47,7 +47,7 @@
             text-decoration: none;
             display: inline-block;
             margin: 25px;
-            padding: 25px 25px;
+            padding: 20px 20px;
             border: 2px solid #fff;
             border-radius: 50px;
             color: #fff;
@@ -152,8 +152,8 @@
         text-transform: uppercase;
         color: #111135;
         text-decoration: underline;
-        text-decoration-color: #d3d3d3;
-        text-decoration-thickness: 5px;
+        text-decoration-color: red;
+        text-decoration-thickness: 3px;
     }
 
     .fila {
@@ -316,7 +316,7 @@
         color: #111135;
         text-decoration: underline;
         text-decoration-color: red;
-        text-decoration-thickness: 4px;
+        text-decoration-thickness: 3px;
     }
 
     .fila {
@@ -359,6 +359,68 @@
                 opacity: 1;
                 bottom: 0;
             }
+        }
+    }
+}
+
+/*SECCION CONTACTO*/
+
+#contacto {
+    padding: 100px 15px;
+
+    .titulo-seccion {
+        text-align: center;
+        margin: 20px;
+        font-size: 22px;
+        text-transform: uppercase;
+        color: #111135;
+        text-decoration: underline;
+        text-decoration-color: red;
+        text-decoration-thickness: 3px;
+    }
+
+    .contenedor-form {
+        max-width: 1100px;
+        margin: auto;
+
+        .fila {
+            margin-bottom: 15px;
+        }
+
+        .mitad {
+            display: flex;
+            justify-content: space-between;
+
+            input {
+                width: 48%;
+            }
+        }
+
+        input,
+        textarea {
+            padding: 20px;
+            border-radius: 20px;
+            border: none;
+            border: 1px solid #919191;
+        }
+
+        .input-full {
+            width: 100%;
+        }
+    }
+
+    .btn-enviar {
+        display: block;
+        margin: auto;
+        cursor: pointer;
+        transition: .5s;
+        padding: 10px 15px;
+        font-size: 12px;
+        font-weight: bold;
+
+        &:hover {
+            background-color: red;
+            color: #fff;
         }
     }
 }
