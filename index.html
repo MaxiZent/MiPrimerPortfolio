@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
         integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <title>Mi Primer Portolio</title>
+    <title>Portolio Maxi Centurion</title>
 
 </head>
 
@@ -18,20 +18,20 @@
         <div class="contenido">
             <header>
                 <div class="contenido-header">
-                    <h1>/CM/</h1>
-                    <nav id="nav">
+                    <h1>/MC/</h1>
+                    <nav id="nav" class="">
                         <ul id="links">
-                            <li><a href="#inicio" class="seleccionado">INICIO</a></li>
-                            <li><a href="#sobremi">SOBRE MI</a></li>
-                            <li><a href="#servicios">SERVICIO</a></li>
-                            <li><a href="#portfolio">PORTFOLIO</a></li>
-                            <li><a href="#contacto">CONTACTO</a></li>
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
                         </ul>
                     </nav>
 
                     <!--ICONOS DEL MENU RESPONSIVE-->
 
-                    <div id="icono-nav">
+                    <div id="icono-nav" onclick="responsiveMenu()">
                         <i class="fa-solid fa-bars"></i>
                     </div>
 
@@ -39,10 +39,8 @@
 
                     <div class="redes"">
                         <a href=" #"><i class="fa-brands fa-instagram" alt="logoinstagram"></i></a>
-                        <a href="#"><i class="fa-brands fa-facebook" alt="logofacebook"></i></a>
-                        <a href="mailto:maxicenturion10@gmail.com"><i class="fa-regular fa-envelope"
-                                alt="logoemail"></i></a>
-                        <a href="https://www.linkedin.com/in/maximiliano-centurion/"><i class="fa-brands fa-linkedin"
+                        <a href="mailto:maxicenturion10@gmail.com"><i class="fa-regular fa-envelope"alt="logoemail"></i></a>
+                        <a href="https://www.linkedin.com/in/maximiliano-centurion/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"
                                 alt="logolinkedin"></i></a>
                     </div>
                 </div>
@@ -50,9 +48,8 @@
             <div class="presentacion">
                 <p class="bienvenida">Bienvenidos
                 <p>
-                <h2>Soy <span>Maxi Centurion</span> <br>Estudiante de Desarrollo Web</h2>
-                <p class="descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur illo odio
-                    consectetur.</p>
+                <h2>Soy <span>Maxi Centurion</span> <br>Desarrollador Front-end</h2>
+                <p class="descripcion">Les presento mi Primer Portafolio aplicando HTML - SCSS - JavaScript</p>
                 <a href="#portfolio">Ir a Portafolio</a>
             </div>
         </div>
@@ -62,9 +59,9 @@
 
     <section id="sobremi">
         <div class="contenedor-foto">
-            <img src="./img/foto.jpg" alt="">
+            <img src="./img/foto1.jpg" alt="">
             <div class="sobremi">
-                <p class="titulo-seccion">Sobre Mi</p>
+                <p class="titulo-seccion">Sobre MI</p>
                 <h2>Hola, soy <span>Maximiliano Centurion</span></h2>
                 <h3>Desarrollador Web</h3>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore, repudiandae voluptate dolorum
@@ -81,11 +78,12 @@
         <h3 class="titulo-seccion">MIS SERVICIOS</h3>
         <div class="fila">
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
+                <span class="icono"><i class="fa-solid fa-file-code"></i></span>
                 <h4>Diseño de sitios Web</h4>
                 <hr>
                 <ul class="servicios-tag">
                     <li>HTML</li>
+                    <li>CSS</li>
                     <li>SCSS</li>
                     <li>JS</li>
                 </ul>
@@ -93,8 +91,8 @@
                     obcaecati eligendi, nemo natus quaerat</P>
             </div>
             <div class="servicio">
-                <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de sitios Web</h4>
+                <span class="icono"><i class="fa-solid fa-database"></i></span>
+                <h4>Alojamiento de Sitios</h4>
                 <hr>
                 <ul class="servicios-tag">
                     <li>Web</li>
@@ -106,7 +104,7 @@
             </div>
             <div class="servicio">
                 <span class="icono"><i class="fa-solid fa-code"></i></span>
-                <h4>Diseño de sitios Web</h4>
+                <h4>SEO</h4>
                 <hr>
                 <ul class="servicios-tag">
                     <li>Web</li>
@@ -158,8 +156,10 @@
         <h3 class="titulo-seccion">Mis Proyectos</h3>
         <div class="fila">
             <div class="proyecto">
+                <a href="https://zentimpresiones.netlify.app/index.html" target="_blank"></a>
+
                 <div class="overlay"></div>
-                <img src="img/proyecto1.jpg" alt="">
+                <img src="./img/zentproyect.png" alt="">
                 <div class="info">
                     <h4>Proyecto Zent</h4>
                     <p>Mi primer proyecto del curso Desarrollo web en Coder House</p>
@@ -167,18 +167,19 @@
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto2.jpg" alt="">
+                <img src="./img/carritozent.png" alt="">
                 <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
+                    <h4>Carrito Zent JS</h4>
+                    <p>Proyecto carrito de compras del curso JavaScript en Coder House</p>
                 </div>
+
             </div>
             <div class="proyecto">
                 <div class="overlay"></div>
-                <img src="img/proyecto3.jpg" alt="">
+                <img src="./img/reloj.png" alt="">
                 <div class="info">
-                    <h4>Descripcion Proyecto</h4>
-                    <p>Diseño Web</p>
+                    <h4>Reloj Analogico</h4>
+                    <p>Practica de reloj con JavaScript</p>
                 </div>
             </div>
         </div>
@@ -259,12 +260,12 @@
 
     <!-- SECCION FOOTER -->
     <footer>
-        <p>&copy; MaxiZent &copy; Todos los derechos reservados. 2022</p>
+        <p>&copy; Maximiliano Centurion &copy; Todos los derechos reservados. 2022</p>
         <div class="redes">
-            <a href="https://www.linkedin.com/in/maximiliano-centurion/"><i class="fa-brands fa-linkedin"
+            <a href="https://www.linkedin.com/in/maximiliano-centurion/" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-linkedin"
                 alt="logolinkedin"></i></a>
             <a href="mailto:maxicenturion10@gmail.com"><i class="fa-regular fa-envelope" alt="logoemail"></i></a>
-            <a href=" #"><i class="fa-brands fa-instagram" alt="logoinstagram"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" alt="logoinstagram"></i></a>
         </div>
     </footer>
     <script src="index.js"></script>
